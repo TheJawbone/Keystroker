@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HACKATHON", "HACKATHON\HACKATHON.vcxproj", "{0A9F2BA0-699B-419E-91ED-801ACD1C416C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor", "Editor\Editor.vcxproj", "{52C3295E-9394-4D21-9BE9-B74EF54E71FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Debug|x64.ActiveCfg = Debug|x64
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Debug|x64.Build.0 = Debug|x64
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Debug|x86.ActiveCfg = Debug|Win32
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Debug|x86.Build.0 = Debug|Win32
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Release|x64.ActiveCfg = Release|x64
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Release|x64.Build.0 = Release|x64
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Release|x86.ActiveCfg = Release|Win32
+		{0A9F2BA0-699B-419E-91ED-801ACD1C416C}.Release|x86.Build.0 = Release|Win32
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Debug|x64.ActiveCfg = Debug|x64
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Debug|x64.Build.0 = Debug|x64
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Debug|x86.Build.0 = Debug|Win32
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Release|x64.ActiveCfg = Release|x64
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Release|x64.Build.0 = Release|x64
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Release|x86.ActiveCfg = Release|Win32
+		{52C3295E-9394-4D21-9BE9-B74EF54E71FB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67419220-C88B-43C9-8BB2-024F3091DB9D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://guitartoms.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HACKATHON\\HACKATHON.vcxproj
+		SccProjectName1 = HACKATHON
+		SccLocalPath1 = HACKATHON
+		SccProjectUniqueName2 = Editor\\Editor.vcxproj
+		SccProjectName2 = Editor
+		SccLocalPath2 = Editor
+	EndGlobalSection
+EndGlobal

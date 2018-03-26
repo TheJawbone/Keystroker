@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0A9F2BA0-699B-419E-91ED-801ACD1C416C}</ProjectGuid>
+    <RootNamespace>HACKATHON</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Game\bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir).vs\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)libraries\SFML\include;$(ProjectDir)libraries\pugixml\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)libraries\SFML\bin\$(PlatformTarget)\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Game\bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir).vs\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)libraries\SFML\include;$(ProjectDir)libraries\pugixml\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)libraries\SFML\bin\$(PlatformTarget)\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)Game\bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir).vs\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)libraries\SFML\include;$(ProjectDir)libraries\pugixml\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)libraries\SFML\bin\$(PlatformTarget)\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)Game\bin\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir).vs\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)libraries\SFML\include;$(ProjectDir)libraries\pugixml\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)libraries\SFML\bin\$(PlatformTarget)\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-network-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-network-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\File.cpp" />
+    <ClCompile Include="src\JumpObstacle.cpp" />
+    <ClCompile Include="src\Foreground.cpp" />
+    <ClCompile Include="src\GameGhost.cpp" />
+    <ClCompile Include="src\Background.cpp" />
+    <ClCompile Include="src\EmptyObstacle.cpp" />
+    <ClCompile Include="src\EndGameMenu.cpp" />
+    <ClCompile Include="src\GUI\GraphicLabel.cpp" />
+    <ClCompile Include="src\KeyVisualization.cpp" />
+    <ClCompile Include="src\MainMenu.cpp" />
+    <ClCompile Include="src\GUI\Label.cpp" />
+    <ClCompile Include="src\KeyboardEvents.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\GUI\Widget.cpp" />
+    <ClCompile Include="src\GUI\Button.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameMaster.cpp" />
+    <ClCompile Include="src\GameState.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\MouseEventsHandler.cpp" />
+    <ClCompile Include="src\Obstacle.cpp" />
+    <ClCompile Include="src\Platform.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\pugixml\pugixml.cpp" />
+    <ClCompile Include="src\SlideObstacle.cpp" />
+    <ClCompile Include="src\SpinningKnifes.cpp" />
+    <ClCompile Include="src\SplashScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Background.hpp" />
+    <ClInclude Include="include\EmptyObstacle.hpp" />
+    <ClInclude Include="include\EndGameMenu.hpp" />
+    <ClInclude Include="include\File.hpp" />
+    <ClInclude Include="include\Foreground.hpp" />
+    <ClInclude Include="include\GameGhost.hpp" />
+    <ClInclude Include="include\GameObject.hpp" />
+    <ClInclude Include="include\Globals.hpp" />
+    <ClInclude Include="include\GUI.hpp" />
+    <ClInclude Include="include\GUI\Button.hpp" />
+    <ClInclude Include="include\Game.hpp" />
+    <ClInclude Include="include\GameMaster.hpp" />
+    <ClInclude Include="include\GameState.hpp" />
+    <ClInclude Include="include\GUI\GraphicLabel.hpp" />
+    <ClInclude Include="include\GUI\Label.hpp" />
+    <ClInclude Include="include\GUI\Widget.hpp" />
+    <ClInclude Include="include\GUI\Widgets.hpp" />
+    <ClInclude Include="include\KeyVisualization.hpp" />
+    <ClInclude Include="include\MainMenu.hpp" />
+    <ClInclude Include="include\MouseEventsHandler.hpp" />
+    <ClInclude Include="include\Obstacle.hpp" />
+    <ClInclude Include="include\Platform.hpp" />
+    <ClInclude Include="include\Player.hpp" />
+    <ClInclude Include="include\KeyboardEvents.hpp" />
+    <ClInclude Include="include\pugixml\pugiconfig.hpp" />
+    <ClInclude Include="include\pugixml\pugixml.hpp" />
+    <ClInclude Include="include\SplashScreen.hpp" />
+    <ClInclude Include="include\SpinningKnifes.hpp" />
+    <ClInclude Include="include\JumpObstacle.hpp" />
+    <ClInclude Include="include\SlideObstacle.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libraries\SFML\bin\x64\lib\flac.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\freetype.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\jpeg.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\ogg.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\openal32.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-audio-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-audio-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-audio-s.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-audio.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-graphics-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-graphics-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-graphics-s.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-graphics.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-main-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-main.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-network-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-network-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-network-s.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-network.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-system-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-system-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-system-s.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-system.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-window-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-window-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-window-s.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\sfml-window.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\vorbis.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\vorbisenc.lib" />
+    <Library Include="libraries\SFML\bin\x64\lib\vorbisfile.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\flac.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\freetype.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\jpeg.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\ogg.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\openal32.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-audio-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-audio-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-audio-s.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-audio.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-graphics-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-graphics-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-graphics-s.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-graphics.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-main-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-main.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-network-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-network-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-network-s.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-network.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-system-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-system-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-system-s.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-system.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-window-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-window-s-d.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-window-s.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\sfml-window.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\vorbis.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\vorbisenc.lib" />
+    <Library Include="libraries\SFML\bin\x86\lib\vorbisfile.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Game\bin\graphics\backgroundMain.pdn" />
+    <None Include="Game\bin\graphics\CharacterSheet.pdn" />
+    <None Include="Game\bin\graphics\clouds.pdn" />
+    <None Include="Game\bin\graphics\combo.pdn" />
+    <None Include="Game\bin\graphics\Loading.pdn" />
+    <None Include="Game\bin\graphics\nums.pdn" />
+    <None Include="Game\bin\graphics\platform100x40x1.pdn" />
+    <None Include="Game\bin\graphics\platform200x40x1.pdn" />
+    <None Include="Game\bin\graphics\platform400x40x1.pdn" />
+    <None Include="Game\bin\graphics\platform800x40x1.pdn" />
+    <None Include="Game\bin\graphics\polsl.pdn" />
+    <None Include="Game\bin\graphics\quitButton.pdn" />
+    <None Include="Game\bin\graphics\quitButton_hoover_.pdn" />
+    <None Include="Game\bin\graphics\startButton.pdn" />
+    <None Include="Game\bin\graphics\trees.pdn" />
+    <None Include="Game\bin\graphics\wirujaceOstrzeZnikad.pdn" />
+    <None Include="Game\bin\x64\openal32.dll" />
+    <None Include="Game\bin\x86\openal32.dll" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-audio-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-audio-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-graphics-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-graphics-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-network-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-network-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-system-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-system-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-window-d.pdb" />
+    <None Include="libraries\SFML\bin\x64\lib\sfml-window-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-audio-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-audio-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-graphics-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-graphics-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-network-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-network-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-system-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-system-s-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-window-d.pdb" />
+    <None Include="libraries\SFML\bin\x86\lib\sfml-window-s-d.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Game\bin\graphics\arrowLeft.png" />
+    <Image Include="Game\bin\graphics\arrowRight.png" />
+    <Image Include="Game\bin\graphics\backgroundMain.png" />
+    <Image Include="Game\bin\graphics\CharacterSheet.png" />
+    <Image Include="Game\bin\graphics\clouds.png" />
+    <Image Include="Game\bin\graphics\combo.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000000.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000001.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000002.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000003.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000004.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000005.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000006.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000007.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000008.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000009.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000010.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000011.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000012.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000013.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000014.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000015.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000016.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000017.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000018.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000019.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000020.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000021.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000022.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000023.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000024.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000025.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000026.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000027.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000028.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000029.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000030.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000031.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000032.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000033.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000034.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000035.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000036.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000037.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000038.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000039.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000040.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000041.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000042.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000043.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000044.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000045.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000046.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000047.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000048.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000049.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000050.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000051.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000052.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000053.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000054.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000055.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000056.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000057.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000058.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000059.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000060.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000061.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000062.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000063.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000064.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000065.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000066.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000067.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000068.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000069.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000070.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000071.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000072.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000073.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000074.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000075.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000076.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000077.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000078.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000079.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000080.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000081.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000082.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000083.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000084.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000085.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000086.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000087.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000088.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000089.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000090.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000091.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000092.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000093.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000094.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000095.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000096.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000097.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000098.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000099.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000100.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000101.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000102.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000103.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000104.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000105.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000106.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000107.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000108.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000109.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000110.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000111.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000112.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000113.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000114.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000115.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000116.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000117.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000118.png" />
+    <Image Include="Game\bin\graphics\Intro\Intro_000119.png" />
+    <Image Include="Game\bin\graphics\Letters\A.png" />
+    <Image Include="Game\bin\graphics\Letters\B.png" />
+    <Image Include="Game\bin\graphics\Letters\C.png" />
+    <Image Include="Game\bin\graphics\Letters\D.png" />
+    <Image Include="Game\bin\graphics\Letters\E.png" />
+    <Image Include="Game\bin\graphics\Letters\F.png" />
+    <Image Include="Game\bin\graphics\Letters\G.png" />
+    <Image Include="Game\bin\graphics\Letters\H.png" />
+    <Image Include="Game\bin\graphics\Letters\I.png" />
+    <Image Include="Game\bin\graphics\Letters\J.png" />
+    <Image Include="Game\bin\graphics\Letters\K.png" />
+    <Image Include="Game\bin\graphics\Letters\L.png" />
+    <Image Include="Game\bin\graphics\Letters\M.png" />
+    <Image Include="Game\bin\graphics\Letters\N.png" />
+    <Image Include="Game\bin\graphics\Letters\O.png" />
+    <Image Include="Game\bin\graphics\Letters\P.png" />
+    <Image Include="Game\bin\graphics\Letters\Q.png" />
+    <Image Include="Game\bin\graphics\Letters\R.png" />
+    <Image Include="Game\bin\graphics\Letters\S.png" />
+    <Image Include="Game\bin\graphics\Letters\T.png" />
+    <Image Include="Game\bin\graphics\Letters\U.png" />
+    <Image Include="Game\bin\graphics\Letters\V.png" />
+    <Image Include="Game\bin\graphics\Letters\W.png" />
+    <Image Include="Game\bin\graphics\Letters\X.png" />
+    <Image Include="Game\bin\graphics\Letters\Y.png" />
+    <Image Include="Game\bin\graphics\Letters\Z.png" />
+    <Image Include="Game\bin\graphics\light1.png" />
+    <Image Include="Game\bin\graphics\light2.png" />
+    <Image Include="Game\bin\graphics\light3.png" />
+    <Image Include="Game\bin\graphics\Loading.png" />
+    <Image Include="Game\bin\graphics\num0.png" />
+    <Image Include="Game\bin\graphics\num1.png" />
+    <Image Include="Game\bin\graphics\num2.png" />
+    <Image Include="Game\bin\graphics\num3.png" />
+    <Image Include="Game\bin\graphics\num4.png" />
+    <Image Include="Game\bin\graphics\num5.png" />
+    <Image Include="Game\bin\graphics\num6.png" />
+    <Image Include="Game\bin\graphics\num7.png" />
+    <Image Include="Game\bin\graphics\num8.png" />
+    <Image Include="Game\bin\graphics\num9.png" />
+    <Image Include="Game\bin\graphics\platform100x40x1.png" />
+    <Image Include="Game\bin\graphics\platform200x40x1.png" />
+    <Image Include="Game\bin\graphics\platform400x40x1.png" />
+    <Image Include="Game\bin\graphics\platform800x40x1.png" />
+    <Image Include="Game\bin\graphics\polsl.png" />
+    <Image Include="Game\bin\graphics\quitButton.png" />
+    <Image Include="Game\bin\graphics\quitButton_hoover.png" />
+    <Image Include="Game\bin\graphics\startButton.png" />
+    <Image Include="Game\bin\graphics\startButton_hoover.png" />
+    <Image Include="Game\bin\graphics\StartScreenFinal.png" />
+    <Image Include="Game\bin\graphics\trees.png" />
+    <Image Include="Game\bin\graphics\wirujaceOstrzeZnikad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Game\bin\fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Game\bin\sounds\bass1.wav" />
+    <Media Include="Game\bin\sounds\test1.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
